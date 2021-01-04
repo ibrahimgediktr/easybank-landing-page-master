@@ -18,3 +18,4 @@
 node_modules/
 *svgs.html
 *debug.log
+public/css
