@@ -1,0 +1,22 @@
+@mixin button-bg( $btn-bg-linear){
+    background: $btn-bg-linear;
+    &:hover {
+        background: $btn-bg-linear;
+        transition: all 0.3s ease;
+        filter:opacity(80%)
+    }
+}
+
+.btn {
+    color:#fff;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 50px;
+    background: transparent;
+    border: none;
+    height: 45px;
+    width: 100%;
+    max-width: 162px;
+    cursor:pointer;
+    font-size: 0.9rem !important;
+}

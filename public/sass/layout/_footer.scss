@@ -1,0 +1,83 @@
+.footer {
+    padding: 45px 5%;
+    background: $dark-blue;
+    @media screen and (max-width:768px){
+        padding: 35px 5%;
+    }
+    &-container {
+        width: 100%;
+        max-width: 1150px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 130px;
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        .footer-row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @media screen and (max-width: 768px) {
+                justify-content: center;
+                align-items: center;
+                margin: 25px;
+            }
+            .footer-social {
+                margin-top: 45px;
+                @media screen and (max-width: 768px) {
+                    margin-top: 10px;
+                }
+                a {
+                    margin-left: 12px;
+                    @media screen and (max-width: 768px) {
+                        margin-top: 10px;
+                    }
+                    &:hover{
+                        svg{
+                            path{
+                                    fill: $lime-green;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .footer-nav {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 15px;
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                }
+                a {
+                    color: #fff;
+                    &:hover{
+                        color:$lime-green
+                    }
+                }
+            }
+            .footer-btn {
+                font-size: 0.9rem;
+                @include button-bg($bg-linear);
+            }
+            .footer-copyright {
+                margin-top: 20px;
+                color: #fff;
+            }
+            
+        }
+        .footer-center{
+            align-items: flex-start;
+            font-size: 0.9rem;
+            @media screen and (max-width:768px){
+                align-items: center;
+            }
+        }
+        .footer-right{
+            font-size:0.9rem;
+        }
+    }
+}
