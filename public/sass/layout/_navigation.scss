@@ -79,8 +79,49 @@
         .toggle-menu {
             display: none;
             cursor: pointer;
+            width: 24px;
+            height: 19px;
+            position: relative;
+            svg{
+                width: 100%;
+                display: block;
+                position: absolute;
+                &:first-child{
+                    transform-origin: 50% 50%;
+                    transition: 0.2s ease-in-out;
+                }
+                &:last-child{
+                    transform-origin: 50% 50%;
+                    transition: 0.2s ease-in-out;
+                    transform: scale(0)
+                }
+            }
             @media screen and (max-width: 992px) {
                 display: block;
+            }
+            &.toggle-ani{
+                svg{
+                    &:first-child{
+                        transform: scale(0);
+                    }
+                    &:last-child{
+                        transform: scale(1);
+                    }
+                }
+            }
+            &.t-rotate{
+                svg{
+                    &:last-child{
+                        transform: scale(0) rotate(0deg);
+                    }
+                }
+                &.toggle-ani{
+                    svg{
+                        &:last-child{
+                            transform: scale(1) rotate(-360deg);
+                        }
+                    }
+                }
             }
         }
     }

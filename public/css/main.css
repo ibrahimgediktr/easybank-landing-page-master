@@ -434,10 +434,41 @@ h6 {
           display: none; } }
     .navbar .navbar-container .toggle-menu {
       display: none;
-      cursor: pointer; }
+      cursor: pointer;
+      width: 24px;
+      height: 19px;
+      position: relative; }
+      .navbar .navbar-container .toggle-menu svg {
+        width: 100%;
+        display: block;
+        position: absolute; }
+        .navbar .navbar-container .toggle-menu svg:first-child {
+          -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% 50%;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out; }
+        .navbar .navbar-container .toggle-menu svg:last-child {
+          -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% 50%;
+          -webkit-transition: 0.2s ease-in-out;
+          transition: 0.2s ease-in-out;
+          -webkit-transform: scale(0);
+                  transform: scale(0); }
       @media screen and (max-width: 992px) {
         .navbar .navbar-container .toggle-menu {
           display: block; } }
+      .navbar .navbar-container .toggle-menu.toggle-ani svg:first-child {
+        -webkit-transform: scale(0);
+                transform: scale(0); }
+      .navbar .navbar-container .toggle-menu.toggle-ani svg:last-child {
+        -webkit-transform: scale(1);
+                transform: scale(1); }
+      .navbar .navbar-container .toggle-menu.t-rotate svg:last-child {
+        -webkit-transform: scale(0) rotate(0deg);
+                transform: scale(0) rotate(0deg); }
+      .navbar .navbar-container .toggle-menu.t-rotate.toggle-ani svg:last-child {
+        -webkit-transform: scale(1) rotate(-360deg);
+                transform: scale(1) rotate(-360deg); }
 
 .footer {
   padding: 45px 5%;

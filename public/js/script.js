@@ -13,9 +13,5 @@ console.log(toggleMenu);
 
 toggleMenu.addEventListener('click', () => {
     navList.classList.toggle('nav-active');
-    if (imgSrc.getAttribute('src') === 'assets/images/icon-hamburger.svg' ){
-       imgSrc.setAttribute('src','assets/images/icon-close.svg')
-    } else {
-        imgSrc.setAttribute('src', 'assets/images/icon-hamburger.svg')
-    }
+    toggleMenu.classList.toggle('toggle-ani');
 })
