@@ -61,9 +61,10 @@ h6 {
   font-size: 0.9rem !important; }
 
 .features {
-  margin-top: -260px;
   background: #f3f4f6;
-  padding: 90px 5%; }
+  padding: 90px 5%;
+  overflow-x: hidden;
+  margin-top: -260px; }
   @media screen and (max-width: 768px) {
     .features {
       margin-top: -100px; } }
@@ -133,7 +134,8 @@ h6 {
         color: #9698a6; }
 
 .articles {
-  padding: 90px 5%; }
+  padding: 90px 5%;
+  overflow-x: hidden; }
   .articles-container {
     width: 100%;
     max-width: 1150px;
@@ -320,7 +322,7 @@ h6 {
       .hero-header-right .hero-header-intro .hero-header-image {
         position: relative;
         right: -130px;
-        top: 100px;
+        top: 120px;
         z-index: 3;
         min-width: 100%; }
         @media screen and (max-width: 768px) {
@@ -329,7 +331,7 @@ h6 {
             min-height: 200px;
             height: auto;
             right: 0;
-            top: 20px; } }
+            top: 30px; } }
 
 .navbar {
   height: 80px;
@@ -344,7 +346,11 @@ h6 {
           align-items: center;
   background-color: white;
   z-index: 9999;
-  position: relative; }
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%; }
   .navbar .navbar-container {
     position: relative;
     width: 100%;
@@ -383,8 +389,8 @@ h6 {
                 transform: translateY(-70%);
         opacity: 0;
         width: 100%;
-        -webkit-transition: all 0.4s ease;
-        transition: all 0.4s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
         background-color: #fff;
         border-radius: 10px;
         -webkit-box-shadow: 0px 0px 141px 53px rgba(0, 0, 0, 0.41);

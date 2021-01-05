@@ -85,7 +85,7 @@
             .hero-header-image{
                 position: relative;
                 right: -130px;
-                top: 100px;
+                top: 120px;
                 z-index:3;
                 min-width: 100%;
                 @media screen and (max-width:768px){
@@ -93,7 +93,7 @@
                     min-height: 200px;
                     height: auto;
                     right: 0;
-                    top: 20px;
+                    top: 30px;
                 }
             }
         }

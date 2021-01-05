@@ -1,7 +1,8 @@
 .features{
-    margin-top:-260px;
     background:$light-grayish-blue;
     padding:90px 5%;
+    overflow-x: hidden;
+    margin-top: -260px;
     @media screen and (max-width:768px){
         margin-top:-100px;
     }
