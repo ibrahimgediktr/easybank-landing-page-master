@@ -303,12 +303,6 @@ h6 {
       background-position: bottom left;
       background-size: cover;
       background-repeat: no-repeat;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: end;
-          -ms-flex-pack: end;
-              justify-content: flex-end;
       position: relative;
       top: -14%;
       right: -10px;
