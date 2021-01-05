@@ -73,7 +73,7 @@
             display: flex;
             justify-content: flex-end;
             position: relative;
-            top: -160px;
+            top: -14%;
             right:-10px;
             height: 106%;
             @media screen and (max-width:768px){
@@ -81,11 +81,12 @@
                 top:-70px;
                 left: 0;
                 background-size: 170%;
+                height: 100%;
             }
             .hero-header-image{
                 position: relative;
                 right: -130px;
-                top: 120px;
+                top: 9%;
                 z-index:3;
                 min-width: 100%;
                 @media screen and (max-width:768px){
@@ -93,6 +94,7 @@
                     height: auto;
                     right: 0;
                     top: 30px;
+                    min-width: 0;
                 }
             }
         }

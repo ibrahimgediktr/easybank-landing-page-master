@@ -30,10 +30,10 @@ li {
   list-style: none; }
 
 h1 {
-  font-size: 2.8rem; }
+  font-size: 2.7rem; }
 
 h2 {
-  font-size: 2.2rem; }
+  font-size: 2.1rem; }
 
 h3 {
   font-size: 1.5rem; }
@@ -310,7 +310,7 @@ h6 {
           -ms-flex-pack: end;
               justify-content: flex-end;
       position: relative;
-      top: -160px;
+      top: -14%;
       right: -10px;
       height: 106%; }
       @media screen and (max-width: 768px) {
@@ -318,11 +318,12 @@ h6 {
           background-position: center;
           top: -70px;
           left: 0;
-          background-size: 170%; } }
+          background-size: 170%;
+          height: 100%; } }
       .hero-header-right .hero-header-intro .hero-header-image {
         position: relative;
         right: -130px;
-        top: 120px;
+        top: 9%;
         z-index: 3;
         min-width: 100%; }
         @media screen and (max-width: 768px) {
@@ -330,7 +331,8 @@ h6 {
             width: 100%;
             height: auto;
             right: 0;
-            top: 30px; } }
+            top: 30px;
+            min-width: 0; } }
 
 .navbar {
   height: 80px;
@@ -369,6 +371,7 @@ h6 {
       height: auto; }
     @media screen and (max-width: 992px) {
       .navbar .navbar-container .nav-list {
+        top: 0;
         padding: 4% 0;
         position: absolute;
         display: -webkit-box;
@@ -384,8 +387,8 @@ h6 {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        -webkit-transform: translateY(-70%);
-                transform: translateY(-70%);
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
         opacity: 0;
         width: 100%;
         background-color: #fff;
@@ -397,8 +400,8 @@ h6 {
         transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
         transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out; }
         .navbar .navbar-container .nav-list.nav-active {
-          -webkit-transform: translateY(85%);
-                  transform: translateY(85%);
+          -webkit-transform: translateY(75px);
+                  transform: translateY(75px);
           opacity: 1; } }
     .navbar .navbar-container .nav-list .nav-link {
       padding: 30px 20px;

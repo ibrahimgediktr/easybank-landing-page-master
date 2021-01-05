@@ -24,13 +24,14 @@
         }
         .nav-list {
             @media screen and (max-width: 992px) {
+                top: 0;
                 padding: 4% 0;
                 position: absolute;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                transform: translateY(-70%);
+                transform: translateY(0px);
                 opacity: 0;
                 width: 100%;
                 background-color: #fff;
@@ -41,7 +42,7 @@
 
                 transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
                 &.nav-active {
-                    transform: translateY(85%);
+                    transform: translateY(75px);
                     opacity: 1;
                 }
             }
